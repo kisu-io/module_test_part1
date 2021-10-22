@@ -16,5 +16,6 @@ The following topics will be covered in this test:
 
 ## Personal Infomation
 
-Name: Vu Pham Khoi Nguyen
-Class: FTW Panther
+- Name: Vu Pham Khoi Nguyen
+
+- Class: FTW Panther
