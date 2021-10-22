@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Module Test</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Module Test</span>
+      </div>
+      <span class="navbar-text">Vu Pham Khoi Nguyen</span>
+    </nav>
+
+    <div class="container" id="cli">
+      <h1>1. CLI</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>Q1. What is CLI?</h3>
+          <p>
+            The command line interface (CLI) is a text-based interface that allows users to
+            communicate with the computer through responding to visual prompts by putting single
+            commands into the interface and receiving a response in the same manner.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q2. What is the advantage/disadvantage of CLI?</h3>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Advantages</th>
+                <th scope="col">Disadvantages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Does not require OS running.</td>
+                <td>
+                  CLI can be hard to learn for new users.(People who use it look like hackers)
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  Require less Random Access Memory to run compare to others type of interfaces
+                </td>
+                <td>CLI have a spell check that you need to follow precisely</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Easy for people who are familiar</td>
+                <td>Large number of syntax that need to be learned</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-body">
+          <h3>Q3. Which do you prefer, CLI or GUI (Graphical User Interface)? Why?</h3>
+          <p>
+            I prefer CLI because once you get to know the syntax, the workflow will be much more
+            smooth and precise with much less action on the mouse and make you feel powerful too!
+            CLI is like my superhero power!
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q4. Which command to check your current directory?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>pwd</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q5. Which command to create a new folder/directory?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>mkdir</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q6. Which command to create a new file?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>touch</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q7. You are in Desktop folder, which command to make a new directory name coderschool
+            and navigate inside it?
+          </h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>mkdir coderschool</code></div>
+            <div class="card-body"><code>cd coderschool</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q8. Which command to delete a file?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>rm</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q9. Which command to delete a not-empty folder?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>rm -rf</code></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q10. What does this command do?</h3>
+          <div class="card bg-dark">
+            <div class="card-body"><code>echo "# test" >> README.md</code></div>
+          </div>
+          <p>
+            This command will create a README.md file in our directory and add the "# test" line to
+            the first line of it.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="github">
+      <h1>2. Git/Github</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>Q11. What does <code>.</code> mean in this command:</h3>
+          <div class="card bg-dark">
+            <div class="card-body"><code>git add .</code></div>
+          </div>
+          <div class="answer">
+            <p>
+              The <code>.</code> will add all of the files in the directory you are currently
+              working to the staging area.
+            </p>
+            <p>
+              (Disclaimers: you must be in the root directory of your working folder for this
+              command to work! and don't forget <code>git init</code>!)
+            </p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q12. What does <code>-m</code> mean, is it OK without <code>-m</code> in this command:
+          </h3>
+          <div class="card bg-dark">
+            <div class="card-body"><code>git commit -m "first commit"</code></div>
+          </div>
+          <div class="answer">
+            <p>
+              The <code>-m</code> will add a message to the commitment we made to git, without
+              <code>-m</code> it won't work
+            </p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q13. What does <code>-M</code> mean in this command:</h3>
+          <div class="card bg-dark">
+            <div class="card-body"><code>git branch -M main</code></div>
+          </div>
+          <div class="answer">
+            <p>The <code>-M</code> will change the name of the branch from "master" to "main".</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q14. What do <code>origin</code> and <code>main</code> mean in this command:</h3>
+          <div class="card bg-dark">
+            <div class="card-body">
+              <code>git remote add origin https://github.com/acc_namerepo_name.git</code>
+            </div>
+            <div class="card-body">
+              <code>git push -u origin main</code>
+            </div>
+          </div>
+          <div class="answer">
+            <p>The <code>origin</code> is the default remote repository name.</p>
+            <p>
+              The <code>main</code> is the new updated default branch name. This used to be
+              <code>master</code>.
+            </p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q15. Which command to initialize a git repo in local?</h3>
+          <p>The command we will use is:</p>
+          <div class="card bg-dark">
+            <div class="card-body"><code>git init</code></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="HTML">
+      <h1>3. HTML</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>Q16. Inside head tag, what does first <code>meta</code> tag mean?</h3>
+          <p>
+            Inside the first <code>meta</code> tag it will tell the browser to use the UTF-8
+            charactor encoding to translate your input into machine-friendly code.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q17. Inside head tag, what does second <code>meta</code> tag mean?</h3>
+          <p>
+            Inside the second <code>meta</code> tag it will tell the browser to match the content
+            width with device width, then it will tell the browser to stop the user from scaling the
+            website, in the end, it will set the initial scale, maxium scale and minimum scale of
+            the content.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q18. Inside head tag, what is wrong with <code>link</code> tag?</h3>
+          <p>
+            Inside the <code>link</code> tag the <code>src</code> need to be change to
+            <code>href</code>.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q19. List some tags that do not have closing tag?</h3>
+          <div class="card bg-dark">
+            <div class="card-body">
+              <code>&lt;img /&gt;</code>
+            </div>
+            <div class="card-body">
+              <code>&lt;hr /&gt;</code>
+            </div>
+            <div class="card-body">
+              <code>&lt;link /&gt;</code>
+            </div>
+            <div class="card-body">
+              <code>&lt;meta /&gt;</code>
+            </div>
+            <div class="card-body">
+              <code>&lt;embed /&gt;</code>
+            </div>
+            <div class="card-body">
+              <code>&lt;br /&gt;</code>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q20. Give some contexts of using <code>span</code> tag?</h3>
+          <p>
+            <code>span</code> tag is an inline element tag that is used to
+            <span style="color: pink">mark up text</span> or
+            <span style="text-decoration: underline"> part of documents</span>.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q21. Give 1 example of creating a hyperlink by a tag in html?</h3>
+          <a href="https://www.coderschool.vn">This is the link to the best school in the world!</a>
+        </div>
+        <div class="card-body">
+          <h3>Q22. Give 1 example of inserting a picture in html?</h3>
+          <img
+            src="https://miro.medium.com/max/1400/1*99QW3Cgy77Mya7sX7TbbYA.jpeg"
+            alt="meme"
+            width="300px"
+          />
+        </div>
+        <div class="card-body">
+          <h3>Q22. Give 1 example of creating an email link in html?</h3>
+          <a href="mailto: khoinguyenvupham@gmail.com">Send me your dankest memes!</a>
+        </div>
+        <div class="card-body">
+          <h3>Q23. Create a form similar to the below picture?</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">First Name:</label>
+              <input
+                type="name"
+                class="form-control"
+                id="example-input-first-name"
+                aria-describedby="nameHelp"
+                placeholder="John"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Last Name:</label>
+              <input
+                type="name"
+                class="form-control"
+                id="example-input-last-name"
+                placeholder="Doe"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary mt-1">Submit</button>
+          </form>
+        </div>
+        <div class="card-body">
+          <h3>Q24. Create a form with checkboxes similar to the below picture?</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck"> I have a bike </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck"> I have a car </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck"> I have no money </label>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Q25. How to add a YouTube video to html? (answer with HTML code)</h3>
+          <p>My favorite coding video!</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pKO9UjSeLew"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="CSS">
+      <h1>4. CSS</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>Q26. Explain box model elements.</h3>
+          <p>
+            Box model is a box that wrap around any HTML elements and can be style with CSS. The box
+            model have 4 elements: <code>margin</code>, <code>padding</code>, <code>border</code>,
+            and the content itself.
+          </p>
+          <p><strong>Content</strong> - its what include in the box (texts, images, etc...).</p>
+          <p>
+            <strong>Padding</strong> - defines the area around the content. Padding is transparent.
+          </p>
+          <p><strong>Border</strong> - A border that wrap around the content and padding.</p>
+          <p>
+            <strong>Margin</strong> - defines the area outside of the border. Margin is trasparent.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q27. The value in inch of 1 px?</h3>
+          <p>The value in inch of 1 px is: <strong>0,010416666666666666</strong> inch.</p>
+        </div>
+        <div class="card-body">
+          <h3>Q28. What is vw/vh?</h3>
+          <p>
+            <code>vw</code> - is a unit that is defined in CSS and relative to 1% the width of the
+            viewport.
+          </p>
+          <p>
+            <code>vh</code> - is a unit that is defined in CSS and relative to 1% the height of the
+            viewport.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q29. List all values of <code>position</code> property? Which one is default value?
+          </h3>
+          <p>This list of values of <code>position</code> property is:</p>
+          <p>
+            <code>static</code> - this is the <strong>default</strong> value of
+            <code>position</code> property, this value mean that the element being specified is
+            positioned according to the normal flow of the document. It has no affected positioning
+            with <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> and
+            <code>z-index</code>.
+          </p>
+          <p>
+            <code>relative</code> - is same with <code>static</code> but in this value, all the
+            affected positioning value will work such as: <code>top</code>, <code>right</code>,
+            <code>bottom</code>, <code>left</code> and <code>z-index</code>.
+          </p>
+          <p>
+            <code>fixed</code> - this value will remove the element from the flow of the document,
+            also <code>fixed</code> elements will always be relative to the document and finally it
+            is not affected by any scrolling
+          </p>
+          <p>
+            <code>absolute</code> - this value will remove the element from the flow of the
+            document, with all the positioning porperties affected it but all the other elements
+            ignoring it.
+          </p>
+          <p>
+            <code>sticky</code> - this value will behave like <code>relative</code> value untill
+            user scoll to a pre-defined location of the viewport. At which point, the element will
+            be fixed to an area.
+          </p>
+          <p>
+            <code>inherit</code> - this value will not "cascade", it is used to make the child
+            element follow the positioning of its parent.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q30. List all values of <code>flex-direction</code> property? Which one is default
+            value?
+          </h3>
+          <p>The list of values of <code>flex-direction</code> property is:</p>
+          <p>
+            <code>row</code> - this is the <strong>default</strong> value of
+            <code>flex-direction</code> it make all the content of flex-box flow by horizontal.
+          </p>
+          <p><code>row-reverse</code> - the reversal order of item of <code>row-reverse</code>.</p>
+          <p>
+            <code>column</code> - this value will organize element in flex-box vertically top to
+            bottom.
+          </p>
+          <p>
+            <code>column-reverse</code> - this value is the same with <code>column</code> but
+            reverse order of items.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q31. List all values of <code>justify-content</code> property? Which one is default
+            value?
+          </h3>
+          <p>The list of values of <code>flex-direction</code> property is:</p>
+          <p>
+            <code>flex-start</code> - this is the <strong>default</strong> value of
+            <code>justify-content</code> items are aligned towards the start line.
+          </p>
+          <p><code>flex-end</code> - tems are aligned towards the end line.</p>
+          <p><code>center</code> - items are centered along the line.</p>
+          <p>
+            <code>space-between</code> - items are ordered evenly in the line, first item at the
+            start of the line and last item at the end of the line.
+          </p>
+          <p>
+            <code>space-around</code> - items are ordered with equal space between them but not
+            including the start line and end line space. This means that there will be different
+            spacing between the item and the edge.
+          </p>
+          <p>
+            <code>space-evenly</code> - items are ordered with equal space around them and including
+            the start and end space.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q32. List all values of <code>align-items</code> property? Which one is default value?
+          </h3>
+          <p>The list of values of <code>align-items</code> property is:</p>
+          <p>
+            <code>stretch</code> - this is the <strong>default</strong> value of
+            <code>align-items</code>.
+          </p>
+          <p><code>flex-start</code></p>
+          <p><code>flex-end</code></p>
+          <p><code>center</code></p>
+          <p><code>baseline</code></p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q33. List all values of <code>align-content</code> property? Which one is default value?
+          </h3>
+          <p>The list of values of <code>align-content</code> property is:</p>
+          <p>
+            <code>stretch</code> - this is the <strong>default</strong> value of
+            <code>align-items</code>.
+          </p>
+          <p><code>flex-start</code></p>
+          <p><code>flex-end</code></p>
+          <p><code>space-between</code></p>
+          <p><code>space-around</code></p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q34. List all values of <code>flex-wrap</code> property? Which one is default value?
+          </h3>
+          <p>The list of values of <code>flex-wrap</code> property is:</p>
+          <p>
+            <code>nowrap</code> - this is the <strong>default</strong> value of
+            <code>flex-wrap</code>.
+          </p>
+          <p><code>wrap</code></p>
+          <p><code>wrap-reverse</code></p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q35. The different between <code>space-between</code> and <code>space-around</code> in
+            <code>align-content</code> property?
+          </h3>
+          <p>
+            <code>space-between</code> - elements evenly distributed the first element at the start
+            of the container and the last element at the end of the container.
+          </p>
+          <p>
+            <code>space-around</code> - elements evenly distributed icluding the space start and the
+            end of the container.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q36. Create a box similar to the picture below?</h3>
+          <div class="box-container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="basic-JS">
+      <h1>5. Basic JavaScript</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>Q37. What does this code snippet do? Paste it to vscode, try to run and explain.</h3>
+          <p>The first line declare a <code>let</code> variable <var>i</var> = 3.</p>
+          <p>
+            Then it loop thorugh and starting from 3 it will return and console log all the number <
+            5 through <code>i++</code> which mean <code>i + 1</code>.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q38. What does this code snippet do? Paste it to vscode, try to run and explain.</h3>
+          <p>The first line declare a <code>let</code> variable <var>i</var> = 3.</p>
+          <p>
+            Then it loop thorugh and starting from 3 it will return and console log all the number <
+            5 through <code>i+=1</code> which mean <code>i + 1</code>.
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q39. What does this code snippet do? Paste it to vscode, try to run and explain.</h3>
+          <p>The first line declare a <code>let</code> variable <var>i</var> = 3.</p>
+          <p>
+            Then it loop thorugh and starting from 3 it will return and console log all the number
+            from 3 through <code>i+=1</code> which mean <code>i + 1</code>.(<strong
+              >this is an infinite loop</strong
+            >)
+          </p>
+        </div>
+        <div class="card-body">
+          <h3>Q40. Use for-loop to console log square numbers from 1 to 10.</h3>
+          <p>Check <a href="script.js">Javascript file</a> for solution.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="advance-JS">
+      <h1>6. Advance JavaScript</h1>
+      <div class="card">
+        <div class="card-body">
+          <h3>
+            Q41: Write a function with input (argument) is an array, output (return) is one element
+            from input with age is 21. Test with above array.
+          </h3>
+          <p>Check <a href="script.js">Javascript file</a> for solution.</p>
+        </div>
+        <div class="card-body">
+          <h3>
+            Q42: Write a function with input (argument) is an array, converts this array into json
+            format and saves to db.json file. Test with above array.
+          </h3>
+          <p>Check <a href="script.js">Javascript file</a> for solution.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
